@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilio - Accueil</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.ico">
+</head>
+<header id="hide-header">
+    <div id="menu"></div>
+
+</header>
+<body>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function () {
+            if (window.innerWidth > 900) { // Check if screen width is greater than 900px
+                var currentScrollPos = window.pageYOffset;
+
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("hide-header").style.top = "0"; // Show header
+                } else {
+                    document.getElementById("hide-header").style.top = "-100px"; // Hide header (adjust for header height)
+                }
+                
+                prevScrollpos = currentScrollPos;
+            } else {
+                // Reset header position when screen width is less than or equal to 900px
+                document.getElementById("hide-header").style.top = "0";
+            }
+        };
+
+
+        
+
+    </script>
+    <main>
+        <section id="titre">
+            <h1 id="titreee"><i>
+                <span id="pashide">L'agence qui</span> <br>
+                <span id="hide">L'agence qui !</span> <br>
+                <span id="pashide">vous aide à faire</span> <br>
+                <span id="hide2">vous aide à faire !</span> <br>
+                <span id="pashide"><b>rayonner vos idées</b></span> <br>
+                <span id="hide3">rayonner vos idées !</span> <br>
+            </i></h1>
+            <a href="contact.html"><button class="btn">NOUS CONTACTER</button></a>
+        </section>
+        <section id="bloc">
+            <div id="bloc-texte">
+                <h2>Boostez votre présence culturelle avec une <b>communication personnalisée</b></h2>
+                <p>Chez Ilio, nous mettons en lumière les acteurs culturels en créant des stratégies de communication sur mesure, pensées pour refléter vos valeurs et révéler toute la force de votre vision. Notre mission : <b>transformer votre présence en impact durable et marquant.</b></p>
+            </div>
+            <div id="bloc-image">
+                <img src="img/smile.png" alt="smile">
+            </div>
+        </section>
+        <section id="expertises">
+            <h1>NOS EXPERTISES</h1>
+            <div id="expertises-bloc">
+                <div id="blocs">
+                    <div class="ex1">
+                        <div>
+                            <h2>01</h2>
+                            <p><i><b>Identité de marque</b></i></p>
+                        </div>
+                        <img src="img/01.png" alt="01">
+                    </div>
+                    <div class="ex2">
+                        <div>
+                            <h2>02</h2>
+                            <p><i><b>Marketing print</b></i></p>
+                        </div>
+                        <img src="img/02.png" alt="02">
+                    </div>
+                    <div class="ex3">
+                        <div>
+                            <h2>03</h2>
+                            <p><i><b>Site web & app</b></i></p>
+                        </div>
+                        <img src="img/03.png" alt="03">
+                    </div>
+                    <div class="ex4">
+                        <div>
+                            <h2>04</h2>
+                            <p><i><b>Création de contenu</b></i></p>
+                        </div>
+                        <img src="img/04.png" alt="04">
+                </div>
+            </div>
+        </section>
+        <section id="partenaires">
+            <h1>NOS PARTENAIRES</h1>
+            <p>Ils nous ont fait confiance, et ils ont bien fait !</p>
+            <div id="logo-partenaires">
+                <img src="img/coub.png" alt="coub">
+                <img src="img/chap.png" alt="chap">
+                <img src="img/tourisme.png" alt="tourisme">
+                <img src="img/londe.png" alt="l'onde">
+                <img src="img/mu.png" alt="mu">
+                <img src="img/africolor.png" alt="africolor">
+                <img src="img/louvre.png" alt="louvre">
+            </div>
+        </section>
+        <section id="realisations">
+            <h1>NOS  DERNIÈRES RÉALISATIONS</h1>
+            <div id="rea-bloc">
+                <div id="rea1">
+                    <img src="img/rea1.png" alt="rea1">
+                    <p><b>Identité de marque</b></p>
+                </div>
+                <div id="rea2">
+                    <img src="img/rea2.png" alt="rea2">
+                    <p><b>Marketing print</b></p>
+                </div>
+                <div id="rea3">
+                    <img src="img/rea3.png" alt="rea3">
+                    <p><b>Site web & app</b></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+
+</body>
+</html>
