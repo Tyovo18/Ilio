@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Expertises</title>
+    <link href="styleexp.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.ico">
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+</head>
+<body>
+    <header id="hide-header">
+        <div id="menu"></div>
+    
+    </header>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function () {
+            if (window.innerWidth > 900) { // Check if screen width is greater than 900px
+                var currentScrollPos = window.pageYOffset;
+
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("hide-header").style.top = "0"; // Show header
+                } else {
+                    document.getElementById("hide-header").style.top = "-100px"; // Hide header (adjust for header height)
+                }
+                
+                prevScrollpos = currentScrollPos;
+            } else {
+                // Reset header position when screen width is less than or equal to 900px
+                document.getElementById("hide-header").style.top = "0";
+            }
+        };
+
+    </script>
+
+
+    <main>
+        <div class="breadcrumb"><a href="index.html">Accueil</a> &gt; <strong style="color: black;">Notre expertise</strong></div>
+
+        <section class="expertises">
+            <h1>NOS EXPERTISES</h1>
+            <p id="desc">
+                Notre agence de communication transforme l'art en expérience : des sites web aux applications, du print à la création de contenu, nous révélons l'essence artistique de chaque projet pour captiver et engager votre audience.
+            </p>
+
+            <div class="expertise" id="identite-marque">
+                <div class="image">
+                    <img src="img/01.png" alt="Cube">
+                </div>
+                <div class="expertise-content">
+                    <h2><span style="font-size: 4.3vh; margin-right: 2%;">01</span> Identité de marque</h2>
+                    <p>
+                        L’identité de marque est le socle de toute communication réussie. Chez Ilio, nous vous aidons à définir une identité forte, authentique et mémorable, qui reflète vos valeurs et votre singularité. Du logo à la charte graphique, en passant par le ton de votre message, nous créons une image cohérente et impactante. Une identité de marque bien construite permet de se démarquer, d’attirer l’attention et de bâtir une connexion émotionnelle durable avec votre audience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="expertise" id="strategie-communication">
+                <div class="image">
+                    <img src="img/02.png" alt="Page">
+                </div>
+                <div class="expertise-content">
+                    <h2><span style="font-size: 4.3vh; margin-right: 2%;">02</span> Stratégie de communication</h2>
+                    <p>
+                        Une bonne stratégie de communication est essentielle pour transmettre les bons messages, au bon moment, et auprès des bonnes personnes.
+                        Nous concevons des stratégies sur-mesure, alignées avec vos objectifs et vos cibles. Que ce soit pour lancer un projet, renforcer votre notoriété ou engager votre communauté, notre approche mêle créativité et analyse pour maximiser la portée de vos campagnes et garantir leur succès.
+                    </p>
+                </div>
+            </div>
+
+            <div class="expertise" id="siteweb-application">
+                <div class="image">
+                    <img src="img/03.png" alt="Curseur">
+                </div>
+                <div class="expertise-content">
+                    <h2><span style="font-size: 4.3vh; margin-right: 2%;">03</span> Site web & applications</h2>
+                    <p>
+                        Votre site web ou application est bien plus qu’un simple outil digital : c’est votre vitrine et votre premier point de contact avec vos clients. Chez Ilio, nous concevons des interfaces modernes, intuitives et adaptées à votre identité visuelle. Notre objectif est de rendre l’expérience utilisateur fluide et engageante, tout en garantissant des performances optimales. Un site ou une application bien conçus augmentent votre visibilité et renforcent votre crédibilité en ligne.
+                    </p>
+                </div>
+            </div>
+
+            <div class="expertise" id="creation-contenu">
+                <div class="image">
+                    <img src="img/04.png" alt="Crayon">
+                </div>
+                <div class="expertise-content">
+                    <h2><span style="font-size: 4.3vh; margin-right: 2%;">04</span> Création de contenu</h2>
+                    <p>
+                        Le contenu est le cœur de toute stratégie de communication efficace, qu’il soit digital ou imprimé. Nous produisons des contenus créatifs et percutants : textes, visuels, vidéos, animations, mais aussi supports print comme brochures, affiches, flyers ou catalogues. Chaque contenu est conçu pour capter l’attention, transmettre vos messages clés et générer de l’engagement. Grâce à un contenu de qualité, vous renforcez votre image de marque, touchez vos audiences sur tous les canaux et établissez une relation de confiance durable avec votre public.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+</html>

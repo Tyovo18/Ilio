@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Projets</title>
+    <link href="style2.css" rel="stylesheet">
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+    <link rel="icon" href="img/logo.ico">
+
+</head>
+<body>
+    <header id="hide-header">
+        <div id="menu"></div>
+    
+    </header>
+
+    
+    <script>
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function () {
+            if (window.innerWidth > 900) { // Check if screen width is greater than 900px
+                var currentScrollPos = window.pageYOffset;
+
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("hide-header").style.top = "0"; // Show header
+                } else {
+                    document.getElementById("hide-header").style.top = "-100px"; // Hide header (adjust for header height)
+                }
+                
+                prevScrollpos = currentScrollPos;
+            } else {
+                // Reset header position when screen width is less than or equal to 900px
+                document.getElementById("hide-header").style.top = "0";
+            }
+        };
+
+
+    </script>
+
+
+    
+
+    <main>
+        <div class="breadcrumb"><a href="index.html">Accueil</a> &gt; <strong style="color: black;">Nos projets</strong></div>
+
+        <h1 class="section-title">NOS PROJETS</h1>
+        
+        <section class="projects">
+            <div id="project1">
+                <a href="chaplin.html">  
+                    <div class="number">01</div>
+                    <div class="tprojet">
+                        <div class="title">
+                            <em>LE CHAPELIN</em>
+                        </div>
+                        <div class="description">Communication &<br>réseaux sociaux</div>
+                    </div>
+                </a>
+            </div>
+            <div id="project2">
+                <a href="onde.html"> 
+                    <div class="number">02</div>                   
+                    <div class="tprojet">
+                        <div class="title">
+                            <em>L’ONDE</em>
+                        </div>
+                        <div class="description">Direction artistique &<br>branding</div>
+                    </div>
+                </a> 
+            </div>
+            <div id="project3">
+                <a href="courbevoie.html"> 
+                    <div class="number">03</div>
+                    <div class="tprojet">
+                        <div class="title">
+                            <em>COURBEVOIE</em>
+                        </div>
+                        <div class="description">Branding &<br>développement web</div>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+</html>

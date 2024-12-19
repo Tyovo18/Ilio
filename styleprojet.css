@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Jost:ital,wght@0,600;1,600&display=swap');
+
+html{
+
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #f7f7f7;
+
+}
+
+body{
+    font-family: 'figtree', sans-serif;
+    line-height: 1.5;
+    color: #000;
+    height: 100%;
+    margin: 0;
+}
+
+
+/*------------------------------------------------------MENU------------------------------------------------------ */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Assure que les éléments enfants ont la même hauteur */
+    background-color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch; 
+}
+
+nav ul li {
+    display: flex;
+    align-items: center; 
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center; 
+    color: black;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    height: 100%; 
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #EA6B34;
+    color: white;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center; 
+    z-index: 99999999;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+#menu-button{
+    display: none;
+}
+
+#retour{
+    display: none;
+}
+
+#navbar{
+    margin: 0;
+    display: contents;
+    top: 0%;
+    
+}
+
+#hide-header{
+    position: fixed;
+    top:0;
+    transition: all.4s ease;
+    z-index: 9999999;
+    width: 100%;
+}
+
+/*------------------------------------------------------FIN MENU------------------------------------------------------ */
+
+.breadcrumb {
+    margin: 10px 5%;
+    font-size: 2.4vh;
+    color: #888;
+    a{
+        text-decoration: none;
+        color: #888;
+    }
+}
+
+.breadcrumb a:hover{
+    color: #000;
+    font-weight: bold;
+}
+
+main {
+    margin-top: 15vh;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero{
+    margin-top: 3vh;
+}
+
+.content {
+    margin: 3rem 3rem;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 4.3vh;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.contents{
+    display: flex;
+    margin-top: 3rem;
+
+}
+
+.subheading, .description{
+    width: 50%;
+    
+}
+
+.subheading{
+    border-right: solid black 1px ;
+    padding: 0 4vh 0 0;
+
+}
+
+.description{
+    padding: 0 0 0 4vh;
+}
+
+.subheading h2 {
+    color: #0066CC;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.description h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.description p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 3rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.verti-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+footer {
+    background-color: #292522;
+    color : white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center; 
+}
+
+footer .logo img {
+    height: 60px;
+    padding: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+#texte {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#texte p {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px;
+}
+
+#social-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer .social img {
+    margin: 0 10px; 
+    height: 40px; 
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+}

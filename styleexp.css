@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Jost:ital,wght@0,600;1,600&display=swap');
+
+
+:root {
+    --header-bg: #fff;
+    --header-text: #000;
+    --header-active-link: #FF6F43;
+
+    --identite-bg: #2E64AB;
+    --identite-text: #fff;
+
+    --strategie-bg: #EA6B34;
+    --strategie-text: #fff;
+
+    --siteweb-bg: #ECCA31;
+    --siteweb-text: #000;
+
+    --contenu-bg: #292522;
+    --contenu-text: #fff;
+
+    --footer-bg: #292522;
+    --footer-text: #fff;
+}
+
+
+html{
+
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #f7f7f7;
+
+}
+
+body{
+    font-family: 'figtree', sans-serif;
+    line-height: 1.5;
+    /*color: #000;*/
+    margin: 0;
+}
+
+
+
+/*------------------------------------------------------MENU------------------------------------------------------ */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Assure que les éléments enfants ont la même hauteur */
+    background-color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch; 
+}
+
+nav ul li {
+    display: flex;
+    align-items: center; 
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center; 
+    color: black;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    height: 100%; 
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #EA6B34;
+    color: white;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center; 
+    z-index: 99999999;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+#menu-button{
+    display: none;
+}
+
+#retour{
+    display: none;
+}
+
+#navbar{
+    margin: 0;
+    display: contents;
+    top: 0%;
+    
+}
+
+#hide-header{
+    position: fixed;
+    top:0;
+    transition: all.4s ease;
+    z-index: 9999999;
+    width: 100%;
+}
+
+/*------------------------------------------------------FIN MENU------------------------------------------------------ */
+
+
+.breadcrumb {
+    margin: 10px 5%;
+    font-size: 2.4vh;
+    color: #888;
+    a{
+        text-decoration: none;
+        color: #888;
+    }
+}
+
+.breadcrumb a:hover{
+    color: #000;
+    font-weight: bold;
+}
+main {
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+}
+
+
+#desc{
+    width: 80%;
+    text-align: center;
+    font-weight: bold; 
+    font-size: 2.5vh; 
+    margin: 3vh auto 5vh auto;
+
+}
+
+.expertises {
+    text-align: center;
+    background-color: var(--expertises-bg);
+    color: var(--expertises-text);
+}
+
+.expertises h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.expertise {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0; 
+    text-align: left;
+    height: 30%;
+}
+
+.expertise h1,
+.expertise p {
+    margin: 10px 0; 
+}
+
+.expertise .image{
+    width: 30%;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+.expertise-content{
+    width: 60%;
+    padding: 0 2vh 0 2vh;
+    margin: 3% 0 3% 0;
+    h2{
+        margin: 0 ;
+        font-size: 3.5vh;
+    }
+
+    p{
+        font-size: 2.4vh;
+        font-weight: 500;
+        font-style: italic;
+    }
+}
+
+#identite-marque {
+    background-color: var(--identite-bg);
+    color: var(--identite-text);
+    flex-direction: row;
+    h2,p {
+        text-align: left;
+    } 
+}
+
+#strategie-communication {
+    background-color: var(--strategie-bg);
+    color: var(--strategie-text);
+    flex-direction: row-reverse; 
+    h2,p {
+        text-align: right;
+    } 
+}
+
+#siteweb-application {
+    background-color: var(--siteweb-bg);
+    color: var(--siteweb-text);
+    flex-direction: row; 
+    h2,p {
+        text-align: left;
+    } 
+}
+
+#creation-contenu {
+    background-color: var(--contenu-bg);
+    color: var(--contenu-text);
+    flex-direction: row-reverse; 
+    h2,p {
+        text-align: right;
+    } 
+}
+
+#identite-marque + #strategie-communication,
+#strategie-communication + #siteweb-application,
+#siteweb-application + #creation-contenu {
+    margin-top: 0; 
+}
+
+
+footer {
+    background-color: #292522;
+    color : white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center; 
+}
+
+footer .logo img {
+    height: 60px;
+    padding: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+#texte {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#texte p {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px;
+}
+
+#social-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer .social img {
+    margin: 0 10px; 
+    height: 40px; 
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+}

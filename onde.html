@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théatre centre d’art l’onde</title>
+    <link href="styleprojet.css" rel="stylesheet">
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+    <link rel="icon" href="img/logo.ico">
+</head>
+<body>
+    <header id="hide-header">
+        <div id="menu"></div>
+    
+    </header>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function () {
+            if (window.innerWidth > 900) { // Check if screen width is greater than 900px
+                var currentScrollPos = window.pageYOffset;
+
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("hide-header").style.top = "0"; // Show header
+                } else {
+                    document.getElementById("hide-header").style.top = "-100px"; // Hide header (adjust for header height)
+                }
+                
+                prevScrollpos = currentScrollPos;
+            } else {
+                // Reset header position when screen width is less than or equal to 900px
+                document.getElementById("hide-header").style.top = "0";
+            }
+        };
+
+    </script>
+    
+
+    <main>
+        <div class="breadcrumb"><a href="index.html">Accueil</a> &gt; <a href="projets.html">Nos projets</a> &gt; <strong style="color: black;">Théatre centre d’art l’onde</strong></div>
+    
+        <section class="hero">
+            <img src="img/onde1.png" alt="Centre Culturel Le Chaplin">
+        </section>
+        <section class="content">
+            <h1>Théatre centre d’art l’onde</h1>
+            <div class="contents">
+                <div class="subheading">
+                    <h2>Direction artistique,<br>Création d’un magazine et d’un site</h2>
+                </div>
+                <div class="description">
+                    <h3>Notre Démarche Créative</h3>
+                    <p>Nous avons été sollicités par le centre d'art de Vélizy pour concevoir un site web et un magazine, deux supports complémentaires visant à renforcer la visibilité du centre et enrichir l’expérience de son public.</p>
+                    <p>Le site web, pensé comme une vitrine numérique, propose une navigation fluide et immersive, permettant aux visiteurs de découvrir facilement les expositions, les événements et les actualités du centre. Optimisé pour une consultation sur mobile comme sur desktop, il offre un design épuré et des visuels percutants, pour une expérience utilisateur moderne et engageante.</p>
+                    <p>En parallèle, le magazine imprimé vient enrichir la relation avec le public en proposant des contenus approfondis : entretiens avec les artistes, dossiers thématiques, et reportages sur les coulisses des expositions. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="verti-images">
+                <div class="gallery-item">
+                    <img src="img/onde2.png" alt="Cinemas du Maghreb">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/onde3.png" alt="Affiche MAI">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/onde4.png" alt="Public en salle">
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+</html>

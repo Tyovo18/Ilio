@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre culturel le chaplin</title>
+    <link href="styleprojet.css" rel="stylesheet">
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+    <link rel="icon" href="img/logo.ico">
+</head>
+<body>
+    <header id="hide-header">
+        <div id="menu"></div>
+    
+    </header>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function () {
+            if (window.innerWidth > 900) { // Check if screen width is greater than 900px
+                var currentScrollPos = window.pageYOffset;
+
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("hide-header").style.top = "0"; // Show header
+                } else {
+                    document.getElementById("hide-header").style.top = "-100px"; // Hide header (adjust for header height)
+                }
+                
+                prevScrollpos = currentScrollPos;
+            } else {
+                // Reset header position when screen width is less than or equal to 900px
+                document.getElementById("hide-header").style.top = "0";
+            }
+        };
+
+    </script>
+
+    
+        <main>
+            <div class="breadcrumb"><a href="index.html">Accueil</a> &gt; <a href="projets.html">Nos projets</a> &gt; <strong style="color: black;">Centre Culturel Le Chaplin</strong></div>
+        
+            <section class="hero">
+                <img src="img/chap1.png" alt="Centre Culturel Le Chaplin">
+            </section>
+            <section class="content">
+                <h1>CENTRE CULTUREL LE CHAPLIN</h1>
+                <div class="contents">
+                    <div class="subheading">
+                        <h2>Communication,<br>Refonte des réseaux sociaux</h2>
+                    </div>
+                    <div class="description">
+                        <h3>Notre Démarche Créative</h3>
+                        <p>Nous avons été mandatés pour la refonte des réseaux sociaux d’un centre culturel, avec pour objectif de dynamiser et moderniser sa communication en ligne. Une refonte conçue par des créatifs passionnés, pour une expérience immersive et inspirante.</p>
+                        <p>Le projet inclut un accompagnement complet : définition de la ligne éditoriale, création du concept visuel et production de contenus adaptés aux différentes plateformes sociales.</p>
+                        <p>Pour soutenir la communication globale du centre, nous avons développé des visuels percutants, optimisés pour les publications, stories et vidéos courtes, en complément de supports imprimés (affiches, flyers, programmes) qui enrichissent l’expérience des visiteurs et leur immersion dans les événements culturels proposés.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="gallery">
+                <div class="verti-images">
+                    <div class="gallery-item">
+                        <img src="img/chap2.png" alt="Cinemas du Maghreb">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/chap3.png" alt="Affiche MAI">
+                    </div>
+
+                </div>
+                <div class="gallery-item">
+                    <img src="img/chap4.png" alt="Public en salle">
+                </div>
+                
+            </section>
+        </main>
+
+        <footer id="footer"></footer>
+
+    </body>
+    </html>

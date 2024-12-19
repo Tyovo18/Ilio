@@ -108,19 +108,34 @@
         <section id="realisations">
             <h1>NOS  DERNIÈRES RÉALISATIONS</h1>
             <div id="rea-bloc">
-                <div id="rea1">
-                    <img src="img/rea1.png" alt="rea1">
-                    <p><b>Identité de marque</b></p>
-                </div>
-                <div id="rea2">
-                    <img src="img/rea2.png" alt="rea2">
-                    <p><b>Marketing print</b></p>
-                </div>
-                <div id="rea3">
-                    <img src="img/rea3.png" alt="rea3">
-                    <p><b>Site web & app</b></p>
-                </div>
+                <a href="projet1.html"><div id="rea1">
+                    <img src="img/chaplin.png" alt="chaplin">
+                    <p><i>Le Chaplin</i></p>
+                </div></a>
+                <a href="projet1.html"><div id="rea2">
+                    <img src="img/onde.png" alt="L'onde">
+                    <p><i>L'onde</i></p>
+                </div></a>
+                <a href="projet1.html"><div id="rea3">
+                    <img src="img/courbevoie.png" alt="Courbevoie">
+                    <p><i>C.C. de Courbevoie</i></p>
+                </div></a>
             </div>
+            <a href="projets.html"><button class="plus">VOIR PLUS</button></a>
+        </section>
+        <section id="contact">
+            <h1>PRÊT À VOUS LANCER ?</h1>
+        </br>
+        <form action="/submit_contact" method="post">
+            <div class="name">
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                <input type="text" id="nom" name="nom" placeholder="Nom" required>
+            </div>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <input type="submit" id="envoyer" value="ENVOYER">
+        </form>
+            
         </section>
     </main>
     <footer id="footer"></footer>

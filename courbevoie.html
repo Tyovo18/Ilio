@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre culturel de Courbevoie</title>
+    <link href="styleprojet.css" rel="stylesheet">
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+    <link rel="icon" href="img/logo.ico">
+</head>
+<body>
+    <header id="hide-header">
+        <div id="menu"></div>
+    
+    </header>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function () {
+            if (window.innerWidth > 900) { // Check if screen width is greater than 900px
+                var currentScrollPos = window.pageYOffset;
+
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("hide-header").style.top = "0"; // Show header
+                } else {
+                    document.getElementById("hide-header").style.top = "-100px"; // Hide header (adjust for header height)
+                }
+                
+                prevScrollpos = currentScrollPos;
+            } else {
+                // Reset header position when screen width is less than or equal to 900px
+                document.getElementById("hide-header").style.top = "0";
+            }
+        };
+
+    </script>
+        
+    
+    <main>
+        <div class="breadcrumb"><a href="index.html">Accueil</a> &gt; <a href="projets.html">Nos projets</a> &gt; <strong style="color: black;">Centre Culturel de Courbevoie</strong></div>
+        
+        <section class="hero">
+            <img src="img/courbe1.png" alt="Centre Culturel de Courbevoie">
+        </section>
+        <section class="content">
+            <h1>CENTRE CULTUREL DE COURBEVOIE</h1>
+            <div class="contents">
+                <div class="subheading">
+                    <h2>Développement,<br>refonte de l’identité visuelle et du site web</h2>
+                </div>
+                <div class="description">
+                    <h3>Notre Démarche Créative</h3>
+                    <p>Nous avons été sollicités pour repenser l’identité visuelle et le site web du centre culturel de Courbevoie, avec pour ambition de moderniser et de valoriser l’image de l’établissement auprès de ses publics.</p>
+                    <p>Notre mission ? Redéfinir l’identité graphique du centre, en concevant une charte visuelle contemporaine et distinctive, en harmonie avec l’esprit dynamique et accessible du lieu. Du logo aux éléments de communication imprimés, chaque support a été soigneusement pensé pour offrir une cohérence visuelle forte, adaptée à la diversité des événements et activités proposés.</p>
+                    <p>Côté digital, nous avons entièrement repensé le site web pour en faire un espace interactif et intuitif, facilitant la navigation des utilisateurs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="verti-images">
+                <div class="gallery-item">
+                    <img src="img/courbe2.png" alt="Cinemas du Maghreb">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/courbe3.png" alt="Affiche MAI">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/courbe4.png" alt="Public en salle">
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+</html>
