@@ -169,14 +169,12 @@ section:first-of-type {
 }
     
 .btn:hover {
+    border: 4px solid #fff;
     cursor: pointer;
     padding: 10px;
-    background-color: Transparent;
-    box-shadow: 1px 1px 4px #777777;
-    -webkit-box-shadow: 1px 1px 4px #777777;
-    -moz-box-shadow: 1px 1px 4px #777777;
+    color: #EA6B34;
+    background-color: #fff;
 }
-
 /*------------------------------------------------------SECTION 2------------------------------------------------------ */
 
 #bloc {
