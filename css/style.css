@@ -186,7 +186,7 @@ section:first-of-type {
     font-size:23px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
 }
 
 #bloc-texte {
