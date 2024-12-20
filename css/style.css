@@ -536,7 +536,7 @@ footer .social img {
         position: absolute;
         height: 30px;
         right: 2%;
-        top:27%;
+        top:3vh;
     }
 
     #menu-button img{
@@ -716,6 +716,9 @@ footer .social img {
 }
 
 /------------------------------------------------------CONTACT PAGE------------------------------------------------------/
+#contact-page h1{
+    text-align: center;
+}
 
 #contact-page {
     display: flex;
