@@ -114,7 +114,14 @@ nav .logo img {
 }
 
 /*------------------------------------------------------FIN MENU------------------------------------------------------ */
+span{
+    margin-right: 2%;
+    font-size: 4.3vh;
+}
 
+.expertise-content br{
+    display: none;
+}
 
 .breadcrumb {
     margin: 10px 5%;
@@ -304,7 +311,6 @@ footer .social img {
 }
 
 
-/*------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 @media screen and (max-width:900px){
 
     section:first-of-type {
@@ -383,5 +389,26 @@ footer .social img {
                 font-style: italic;
             }
         }
+    }
+}
+
+@media screen and (max-width:500px) {
+    #navbar{
+        padding-top: 7vw;
+    }
+
+    .image{
+        display: none;
+    }
+    .expertise{
+        justify-content: center;
+    }
+
+    .expertise-content br{
+        display: block;
+    }
+
+    span{
+        margin: 0;
     }
 }
