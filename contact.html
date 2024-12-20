@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilio - Accueil</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.ico">
+</head>
+<body>
+    <header>
+        <div id="menu"></div>
+    </header>
+
+    <div id="contact-page">
+        <h1>PRÊT À VOUS LANCER ?</h1>
+    </br>
+    <form action="/submit_contact" method="post">
+        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+
+        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+        </br>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+        </br>
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+    </br>
+        <input type="submit" id="envoyer" value="ENVOYER">
+    </form>
+        
+</div>
+
+    <footer id="footer"></footer>
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>
