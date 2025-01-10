@@ -175,6 +175,7 @@ section:first-of-type {
     color: #EA6B34;
     background-color: #fff;
 }
+
 /*------------------------------------------------------SECTION 2------------------------------------------------------ */
 
 #bloc {
@@ -184,7 +185,6 @@ section:first-of-type {
     font-size:23px;
     display: flex;
     flex-direction: row;
-
 }
 
 #bloc-texte {
@@ -436,8 +436,6 @@ section:first-of-type {
     border: none;
     border-radius: 5px;
     padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
     font-weight: bold;
     margin-bottom: 40px;
     width: 30%;
@@ -536,7 +534,7 @@ footer .social img {
         position: absolute;
         height: 30px;
         right: 2%;
-        top:3vh;
+        top:27%;
     }
 
     #menu-button img{
@@ -616,6 +614,11 @@ footer .social img {
 
     #rea-bloc{
         flex-direction: column;
+    }
+
+    #envoyer{
+        width: 90%;
+
     }
 
 
@@ -713,65 +716,4 @@ footer .social img {
     }
 
     
-}
-
-/------------------------------------------------------CONTACT PAGE------------------------------------------------------/
-#contact-page h1{
-    text-align: center;
-}
-
-#contact-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#contact-page #message {
-    width: 760px;
-    min-width: 340px;
-    max-width: 1000px;
-    max-height: 500px;
-    overflow: hidden;
-    margin-left: 0px;
-}
-
-#contact-page #email {
-    width: 760px;
-    margin-bottom: 40px;
-    height: 40px;
-    border: solid 1px #000;
-    border-radius: 5px;
-    overflow: hidden;
-    color: #000;
-}
-
-#contact-page #prenom, #nom, textarea {
-    margin-bottom: 40px;
-    width: 350px;
-    height: 40px;
-    border: solid 1px #000;
-    border-radius: 5px;
-    overflow: hidden;
-    color: #000;
-}
-
-#contact-page #envoyer {
-    background-color: #ECCA31;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    position: relative;
-    left: 43%;
-}
-
-#contact-page #envoyer:hover {
-    background-color: #e1bb12;
-    cursor: pointer;
 }
