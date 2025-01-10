@@ -258,7 +258,6 @@ footer .social img {
 }
 
 
-/*------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 @media screen and (max-width:900px){
 
     section:first-of-type {
@@ -338,4 +337,14 @@ footer .social img {
             }
         }
     }
+
+    .contents{
+        flex-direction: column;
+    }
+    .subheading, .description{
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+
 }
