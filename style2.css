@@ -144,7 +144,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
+    width: 65vw;
     margin-left: auto;
     margin-right: auto;
 
@@ -161,7 +161,7 @@ main {
 }
 
 .number {
-    font-size: 60px;
+    font-size: 5vw ;
     font-style: italic;
     font-weight: bold;
     text-decoration: none;
@@ -171,7 +171,7 @@ main {
 }
 
 .title em {
-    font-size: 60px;
+    font-size: 5vw;
     font-style: italic;
     font-weight: bold;
     text-decoration: none;
@@ -277,11 +277,16 @@ footer .social img {
 }
 
 
-/*------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
+
 @media screen and (max-width:900px){
 
     section:first-of-type {
-        margin-top: 15%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    main{
+        height: auto;
     }
 
     #menu-button {
@@ -356,5 +361,17 @@ footer .social img {
                 font-style: italic;
             }
         }
+    }
+}
+
+@media screen and (max-width:750px){
+    .tprojet{
+        flex-direction: column;
+    }
+    .description{
+        text-align: center;
+    }
+    .number{
+        font-size: 7vw;
     }
 }
