@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilio - Accueil</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
     <link rel="icon" href="img/logo.ico">
 </head>
 <body>
@@ -36,21 +36,20 @@
 
     </script>
 
-    <div id="contact-page">
+    <div id="contact">
         <h1>PRÊT À VOUS LANCER ?</h1>
     </br>
     <form action="/submit_contact" method="post">
-        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
-
-        <input type="text" id="nom" name="nom" placeholder="Nom" required>
-        </br>
+        <div class="name">
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+            <input type="text" id="nom" name="nom" placeholder="Nom" required>
+        </div>
         <input type="email" id="email" name="email" placeholder="E-mail" required>
-
-        </br>
         <textarea id="message" name="message" placeholder="Message" required></textarea>
-    </br>
         <input type="submit" id="envoyer" value="ENVOYER">
     </form>
+        
+</div>
         
 </div>
 
